@@ -132,23 +132,24 @@ table {
   box-sizing: border-box;
 }
 
+:root {
+  --bg-clr-1: hsl(0, 0%, 10%);
+  --bg-clr-2: hsl(0, 0%, 13%);
+
+  --txt-clr-1: hsl(210, 17%, 98%);
+  --txt-clr-2: hsl(240, 5%, 64%);
+}
+
 body {
   height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
+  background-color: var(--bg-clr-1);
+  color: var(--txt-clr-1);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-}
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  /* these rules make fonts look nicer and more consistent across browsers and OSes */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
